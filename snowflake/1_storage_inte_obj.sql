@@ -1,0 +1,13 @@
+ CREATE OR REPLACE STORAGE INTEGRATION RAINFALL_AGRI_S3_INTEGRATION
+  TYPE = EXTERNAL_STAGE
+  STORAGE_PROVIDER = 'S3'
+  ENABLED = TRUE
+  STORAGE_AWS_ROLE_ARN = '<AWS_ROLE_ARN>'
+  STORAGE_ALLOWED_LOCATIONS = ('s3://<AWS_S3_Bucket>/')
+  COMMENT = 'Optional Comment'
+
+  //description Integration Object
+  desc integration RAINFALL_AGRI_S3_INTEGRATION;
+
+
+// drop integration PBI_Integration
